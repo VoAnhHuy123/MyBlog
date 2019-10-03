@@ -66,7 +66,7 @@
             overflow: auto;
             height: 660px;
             display: none;
-            padding: 6px 12px;
+            /*padding: 6px 12px;*/
             border: 1px solid #ccc;
             border-top: none;
         }
@@ -97,6 +97,119 @@
 
         .title {
             width: 10%;
+        }
+
+        .tab-1 {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab-1 button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab-1 button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab-1 button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent-1 {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        .tab-2 {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab-2 button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab-2 button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab-2 button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent-2 {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        .tab-3 {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+
+        /* Style the buttons inside the tab */
+        .tab-3 button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 50px;
+        }
+
+        /* Change background color of buttons on hover */
+        .tab-3 button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab-3 button.active {
+            background-color: #ccc;
+        }
+
+        /* Style the tab content */
+        .tabcontent-3 {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+
+        ol li {
+            font-size: 30px;
+            color: black;
         }
     </style>
 </head>
@@ -141,38 +254,151 @@
             </div>
 
             <div id="London" class="tabcontent">
-                <h3>Để Bài </h3>
-                <p>London is the capital city of England.</p>
-                <div id="requirement">
-                    <div class="title">
-                        <span>Requirement:</span>
-                    </div>
-                    <div class="content">
-						<span>If not specified, the browser expects to find the image in the same folder as the web page.
+                <div class="tab-1">
+                    <button class="tablinks-1" onclick="openCity1(event, 'London-1')" id="defaultOpen-1">Requirement
+                    </button>
+                    <button class="tablinks-1" onclick="openCity1(event, 'Paris-1')">Desgin</button>
+                    <button class="tablinks-1" onclick="openCity1(event, 'Tokyo-1')">Implement</button>
+                </div>
 
-However, it is common to store images in a sub-folder. You must then include the folder name in the src attribute:</span>
-                    </div>
+                <div id="London-1" class="tabcontent-1" style="color: black;
+    font-size: 30px;">
+                    <ol>
+                        <li><h2>Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ
+                            như sinh viên, môn học, giảng viên,… để thiết kế trên phần
+                            mềm một chức năng trên web để thêm, sửa, xóa, tìm kiếm
+                            cho đối tượng đó.</h2></li>
+
+                        <li><h2>Upload tất cả lên Azure / github trong menu Lab1 theo thứ
+                            tự: </h2>
+                            <ul>
+                                <li>-Tab Requirement: copy lại nội dung của phần 1 vào đây (trình bày
+                                    cho đẹp)
+                                </li>
+                                <li>-Tab Design: để link tới các file sau đây:
+                                    <ul>
+                                        <li>Thiết kế trên giấy (chụp lại ảnh)</li>
+                                        <li>Thiết kế trên phần mềm thiết kế</li>
+                                    </ul>
+                                </li>
+                                <li>&nbsp;-Tab Implement: chuyển tất cả thiết kế ở trên ở trên sang html</li>
+                            </ul>
+                        </li>
+                    </ol>
 
                 </div>
-                <div id="design">
-                    <div class="title">
-                        <p>Design</p>
-                    </div>
-                    <img src="images/about.jpg" alt="">
-                    <div class="bntdow">
-                        <button class="btn1"><i class="fa fa-download"></i> Download</button>
-                    </div>
+
+                <div id="Paris-1" class="tabcontent-1">
+                    <ol>
+                        <li>
+                            Thiết kế trên giấy
+                            <!--                                <img src="" alt="">-->
+                        </li>
+                        <li>
+                            Thiết kế trên Figma
+                            <div>
+                                <img src="IMG/add%20employee.png" alt="" style="width: 70%;">
+                                <a href="IMG/add%20employee.png" download>
+                                    <button class="btn">
+                                        <i class="fa fa-download"></i>
+                                        Download
+                                    </button>
+                                </a>
+
+                            </div>
+                            <div>
+                                <img src="IMG/Capture.PNG" alt="" style="width: 70%;">
+                                <a href="IMG/Capture.PNG" download>
+                                    <button class="btn">
+                                        <i class="fa fa-download"></i>
+                                        Download
+                                    </button>
+                                </a>
+
+                            </div>
+
+
+                        </li>
+
+
+                    </ol>
                 </div>
+
+                <div id="Tokyo-1" class="tabcontent-1">
+                    <a href="Figtable.html"><img src="IMG/Figtable.PNG" alt="" style="width: 70%"></a>
+                </div>
+                <!--                <h3>Để Bài </h3>-->
+                <!--                <p>London is the capital city of England.</p>-->
+                <!--                <div id="requirement">-->
+                <!--                    <div class="title">-->
+                <!--                        <span>Requirement:</span>-->
+                <!--                    </div>-->
+                <!--                    <div class="content">-->
+                <!--						<span>If not specified, the browser expects to find the image in the same folder as the web page.-->
+
+                <!--However, it is common to store images in a sub-folder. You must then include the folder name in the src attribute:</span>-->
+                <!--                    </div>-->
+
+                <!--                </div>-->
+                <!--                <div id="design">-->
+                <!--                    <div class="title">-->
+                <!--                        <p>Design</p>-->
+                <!--                    </div>-->
+                <!--                    <img src="images/about.jpg" alt="">-->
+                <!--                    <div class="bntdow">-->
+                <!--                        <button class="btn1"><i class="fa fa-download"></i> Download</button>-->
+                <!--                    </div>-->
+                <!--                </div>-->
             </div>
 
             <div id="Paris" class="tabcontent">
-                <h3>Paris</h3>
-                <p>Paris is the capital of France.</p>
+                <!--                sgfgd-->
+                <div class="tab-2">
+                    <button class="tablinks-2" onclick="openCity2(event, 'London-2')" id="defaultOpen-2">Requirement
+                    </button>
+                    <button class="tablinks-2" onclick="openCity2(event, 'Paris-2')">Desgin</button>
+                    <button class="tablinks-2" onclick="openCity2(event, 'Tokyo-2')">Implement</button>
+                </div>
+
+                <div id="London-2" class="tabcontent-2">
+                    <h3>Requirement</h3>
+                    <p>London is the capital city of England.</p>
+                </div>
+
+                <div id="Paris-2" class="tabcontent-2">
+                    <h3>Design</h3>
+                    <p>Paris is the capital of France.</p>
+                </div>
+
+                <div id="Tokyo-2" class="tabcontent-2">
+                    <h3>Implement</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
+                <!--                daafaf-->
             </div>
 
             <div id="Tokyo" class="tabcontent">
-                <h3>Tokyo</h3>
-                <p>Tokyo is the capital of Japan.</p>
+                <div class="tab-3">
+                    <button class="tablinks-3" onclick="openCity3(event, 'London-3')" id="defaultOpen-3">Requirement
+                    </button>
+                    <button class="tablinks-3" onclick="openCity3(event, 'Paris-3')">Desgin</button>
+                    <button class="tablinks-3" onclick="openCity3(event, 'Tokyo-3')">Implement</button>
+                </div>
+
+                <div id="London-3" class="tabcontent-3">
+                    <h3>Requirement</h3>
+                    <p>London is the capital city of England.</p>
+                </div>
+
+                <div id="Paris-3" class="tabcontent-3">
+                    <h3>Design</h3>
+                    <p>Paris is the capital of France.</p>
+                </div>
+
+                <div id="Tokyo-3" class="tabcontent-3">
+                    <h3>Implement</h3>
+                    <p>Tokyo is the capital of Japan.</p>
+                </div>
             </div>
         </section>
         <footer class="ftco-footer ftco-bg-dark ftco-section">
@@ -277,6 +503,60 @@ However, it is common to store images in a sub-folder. You must then include the
 
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click();
+</script>
+<script>
+    function openCity1(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent-1");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks-1");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active-1", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active-1";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen-1").click();
+</script>
+<script>
+    function openCity2(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent-2");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks-2");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active-2", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active-2";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen-2").click();
+</script>
+<script>
+    function openCity3(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent-3");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks-3");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active-3", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active-3";
+    }
+
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen-3").click();
 </script>
 
 </body>
