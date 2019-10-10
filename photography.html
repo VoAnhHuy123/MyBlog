@@ -30,9 +30,10 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
+
     <style>
         body {
-            font-family: Arial;
+            font-family: sans-serif;
         }
 
         /* Style the tab */
@@ -218,8 +219,12 @@
             border-top: none;
         }
 
+        h2 {
+            font-size: 20px;
+        }
+
         ol li {
-            font-size: 30px;
+            font-size: 20px;
             color: black;
         }
 
@@ -232,14 +237,16 @@
 
         iframe {
 
-            width: 70%;
+            width: 100%;
             height: 100%;
         }
-        .downloadAll{
+
+        .downloadAll {
             display: flex;
             justify-content: center;
         }
-        .downloadAll button{
+
+        .downloadAll button {
             height: 50px;
             width: 200px;
             color: white;
@@ -322,98 +329,85 @@
                 </div>
 
                 <div id="Paris-1" class="tabcontent-1">
-                    <ol>
-                        <li>
-                            Thiết kế trên giấy
-                            <div>
-                                <img src="IMG/add.jpg" alt="" style="width: 70%;padding: 200px">
-                                <a href="IMG/add.jpg" download>
-                                    <button class="btn">
-                                        <i class="fa fa-download"></i>
-                                        Download
-                                    </button>
-                                </a>
+                    <div style="width: 100%; height: 100%">
+                        <ol>
+                            <li>
+                                <div style="margin: 20px">Thiết kế trên giấy</div>
+                                <div style="display: flex; margin-bottom: 100px">
+                                    <div style="width: 70%">
+                                        <img src="IMG/add.jpg" alt="" style="width: inherit">
+                                    </div>
+                                    <div style="display: flex; align-items: center">
+                                        <a href="IMG/add.jpg" download>
+                                            <button class="btn">
+                                                <i class="fa fa-download"></i>
+                                                Download
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div style="display: flex">
+                                    <div style="width: 70%">
+                                        <img src="IMG/editremove.jpg" alt="" style="width: inherit">
+                                    </div>
+                                    <div style="display: flex; align-items: center">
+                                        <a href="IMG/editremove.jpg" download>
+                                            <button class="btn">
+                                                <i class="fa fa-download"></i>
+                                                Download
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
 
-                            </div>
-                            <div>
-                                <img src="IMG/editremove.jpg" alt="" style="width: 70%; padding: 100px;">
-                                <a href="IMG/editremove.jpg" download>
-                                    <button class="btn">
-                                        <i class="fa fa-download"></i>
-                                        Download
-                                    </button>
-                                </a>
+                            </li>
+                            <li>
+                                <div style="margin: 20px">Thiết kế trên Figma</div>
+                                <div>
+                                    <img src="IMG/add%20employee.png" alt="" style="width: 70%;">
+                                    <a href="IMG/add%20employee.png" download>
+                                        <button class="btn">
+                                            <i class="fa fa-download"></i>
+                                            Download
+                                        </button>
+                                    </a>
 
-                            </div>
-                        </li>
-                        <li>
-                            Thiết kế trên Figma
-                            <div>
-                                <img src="IMG/add%20employee.png" alt="" style="width: 70%;">
-                                <a href="IMG/add%20employee.png" download>
-                                    <button class="btn">
-                                        <i class="fa fa-download"></i>
-                                        Download
-                                    </button>
-                                </a>
+                                </div>
+                                <div>
+                                    <img src="IMG/Figma.png" alt="" style="width: 70%;">
+                                    <a href="IMG/Figma.png" download>
+                                        <button class="btn">
+                                            <i class="fa fa-download"></i>
+                                            Download
+                                        </button>
+                                    </a>
 
-                            </div>
-                            <div>
-                                <img src="IMG/Figma.png" alt="" style="width: 70%;">
-                                <a href="IMG/Figma.png" download>
-                                    <button class="btn">
-                                        <i class="fa fa-download"></i>
-                                        Download
-                                    </button>
-                                </a>
-
-                            </div>
+                                </div>
 
 
-                        </li>
+                            </li>
 
 
-                    </ol>
-                    <div class="downloadAll" >
-                        <a href="IMG/AllImage.zip" download>
-                            <button class="btn">
-                                <i class="fa fa-download"></i>
-                                Download All
-                            </button>
-                        </a>
+                        </ol>
+                        <div class="downloadAll" style="margin: 30px;">
+                            <a href="IMG/AllImage.zip" download>
+                                <button class="btn">
+                                    <i class="fa fa-download"></i>
+                                    Download All
+                                </button>
+                            </a>
+                        </div>
                     </div>
                 </div>
-
                 <div id="Tokyo-1" class="tabcontent-1">
                     <div class="implement">
-                        <iframe src="Figtable.html" width="70%">
+                        <iframe src="Figtable.html" width="100%">
 
                         </iframe>
                     </div>
 
                 </div>
-                <!--                <h3>Để Bài </h3>-->
-                <!--                <p>London is the capital city of England.</p>-->
-                <!--                <div id="requirement">-->
-                <!--                    <div class="title">-->
-                <!--                        <span>Requirement:</span>-->
-                <!--                    </div>-->
-                <!--                    <div class="content">-->
-                <!--						<span>If not specified, the browser expects to find the image in the same folder as the web page.-->
 
-                <!--However, it is common to store images in a sub-folder. You must then include the folder name in the src attribute:</span>-->
-                <!--                    </div>-->
-
-                <!--                </div>-->
-                <!--                <div id="design">-->
-                <!--                    <div class="title">-->
-                <!--                        <p>Design</p>-->
-                <!--                    </div>-->
-                <!--                    <img src="images/about.jpg" alt="">-->
-                <!--                    <div class="bntdow">-->
-                <!--                        <button class="btn1"><i class="fa fa-download"></i> Download</button>-->
-                <!--                    </div>-->
-                <!--                </div>-->
             </div>
 
             <div id="Paris" class="tabcontent">
@@ -421,27 +415,110 @@
                 <div class="tab-2 tab tab-sub">
                     <button class="tablinks-2" onclick="openCity2(event, 'London-2')" id="defaultOpen-2">Requirement
                     </button>
+                    <button class="tablinks-2" onclick="openCity2(event, 'Scenario')">UserScenario
+                    </button>
                     <button class="tablinks-2" onclick="openCity2(event, 'Paris-2')">Desgin</button>
                     <button class="tablinks-2" onclick="openCity2(event, 'Tokyo-2')">Implement</button>
                 </div>
 
                 <div id="London-2" class="tabcontent-2">
-                    <h3>Requirement</h3>
-                    <p>London is the capital city of England.</p>
+                    <ol>
+                        <li> Bài tập cá nhân:
+                            <ul>
+                                <li>
+                                    Tạo ra một user scenario
+                                </li>
+                                <li>
+                                    Chọn 1 bước trong user scenario để thiết kế 1 form giao diện
+                                    Web trên công cụ thiết kế đã chọn. Sau đó tạo ra file html tương
+                                    ứng cho thiết kế này.
+                                </li>
+                                <li>
+                                    Upload lên Azure / github: trong file html có chèn hình ảnh của
+                                    user scenario ở (1) và đường dẫn của file thiết kế ở (2).
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            Bài tập nhóm:
+                            <ul>
+                                <li>
+                                    Tiếp tục cập nhật Group Diary cho tuần này, phân công công việc
+                                    cho từng thành viên.
+                                </li>
+                                <li>
+                                    Tạo trang About có ghi thông tin về các thành viên (mã SV, Họ
+                                    tên, Lớp, Sở thích,…) è cần trình bày sao cho đẹp
+                                </li>
+                                <li>
+                                    Upload lên Azure
+                                </li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <div id="Scenario" class="tabcontent-2">
+
+                    <div style="margin: auto;
+    width: 50%;
+    height: 500px;">
+                        <img src="IMG/usercenario.png" alt="" style="height: 500px;">
+                    </div>
                 </div>
 
                 <div id="Paris-2" class="tabcontent-2">
-                    <h3>Design</h3>
-                    <p>Paris is the capital of France.</p>
-                </div>
+                    <div style="width: 100%; height: 100%">
+                        <ol>
+                            <li>
+                                <div style="margin: 20px;">Thiết kế trên giấy</div>
+                                <div style="display: flex; margin-bottom: 100px">
+                                    <div style="width: 70%">
+                                        <img src="IMG/loginpaper.jpg" alt="" style="width: inherit">
+                                    </div>
+                                    <div style="display: flex; align-items: center">
+                                        <a href="IMG/loginpaper.jpg" download>
+                                            <button class="btn">
+                                                <i class="fa fa-download"></i>
+                                                Download
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
 
+                            </li>
+                            <li>
+                                <div style="margin: 20px">Thiết kế trên Figma</div>
+                                <div>
+                                    <img src="IMG/Login.png" alt="" style="width: 70%;">
+                                    <a href="IMG/Login.png" download>
+                                        <button class="btn">
+                                            <i class="fa fa-download"></i>
+                                            Download
+                                        </button>
+                                    </a>
+
+                                </div>
+                            </li>
+
+
+                        </ol>
+                        <div class="downloadAll" style="margin: 30px;">
+                            <a href="IMG/AllImage1" download>
+                                <button class="btn">
+                                    <i class="fa fa-download"></i>
+                                    Download All
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!--                daafaf-->
+                </div>
                 <div id="Tokyo-2" class="tabcontent-2">
-                    <h3>Implement</h3>
-                    <p>Tokyo is the capital of Japan.</p>
+                    <iframe src="login.html" frameborder="0" style="width: 100%; height: 700px"></iframe>
                 </div>
-                <!--                daafaf-->
             </div>
-
             <div id="Tokyo" class="tabcontent">
                 <div class="tab-3 tab tab-sub">
                     <button class="tablinks-3" onclick="openCity3(event, 'London-3')" id="defaultOpen-3">Requirement
