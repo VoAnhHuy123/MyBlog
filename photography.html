@@ -27,232 +27,12 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/css.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
-
-    <style>
-        body {
-            font-family: sans-serif;
-        }
-
-        /* Style the tab */
-        .tab {
-            overflow: hidden;
-            border: 1px solid #ccc;
-            background-color: #f1f1f1;
-        }
-
-        /* Style the buttons inside the tab */
-        .tab button {
-            border-radius: 35px;
-            font-weight: 900;
-            width: 15%;
-            background-color: inherit;
-            float: left;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 14px 16px;
-            transition: 0.3s;
-            font-size: 17px;
-        }
-
-        /* Change background color of buttons on hover */
-        .tab button:hover {
-            background-color: #ddd;
-        }
-
-        /* Create an active/current tablink class */
-        .tab button.active {
-            background-color: #ccc;
-        }
-
-        .tab-sub {
-            display: flex;
-            justify-content: center;
-        }
-
-        /* Style the tab content */
-        .tabcontent {
-            overflow: auto;
-            height: 660px;
-            display: none;
-            /*padding: 6px 12px;*/
-            border: 1px solid #ccc;
-            border-top: none;
-        }
-
-        #design .btn1 {
-            background-color: #97aabd;
-            border: none;
-            color: white;
-            padding: 7px 20px;
-            cursor: pointer;
-            font-size: 15px;
-        }
-
-        #design {
-            display: flex;
-        }
-
-        #design img {
-            width: 50%;
-        }
-
-        #design .bntdow {
-            width: 50%;
-            justify-content: center;
-            display: flex;
-            align-items: center;
-        }
-
-        .title {
-            width: 10%;
-        }
-
-        .tab-1 {
-            overflow: hidden;
-            border: 1px solid #ccc;
-            background-color: #f1f1f1;
-        }
-
-        /* Style the buttons inside the tab */
-        .tab-1 button {
-            background-color: inherit;
-            float: left;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 14px 16px;
-            transition: 0.3s;
-            font-size: 17px;
-        }
-
-        /* Change background color of buttons on hover */
-        .tab-1 button:hover {
-            background-color: #ddd;
-        }
-
-        /* Create an active/current tablink class */
-        .tab-1 button.active {
-            background-color: #ccc;
-        }
-
-        /* Style the tab content */
-        .tabcontent-1 {
-            display: none;
-            padding: 6px 12px;
-            border: 1px solid #ccc;
-            border-top: none;
-        }
-
-        .tab-2 {
-            overflow: hidden;
-            border: 1px solid #ccc;
-            background-color: #f1f1f1;
-        }
-
-        /* Style the buttons inside the tab */
-        .tab-2 button {
-            background-color: inherit;
-            float: left;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 14px 16px;
-            transition: 0.3s;
-            font-size: 17px;
-        }
-
-        /* Change background color of buttons on hover */
-        .tab-2 button:hover {
-            background-color: #ddd;
-        }
-
-        /* Create an active/current tablink class */
-        .tab-2 button.active {
-            background-color: #ccc;
-        }
-
-        /* Style the tab content */
-        .tabcontent-2 {
-            display: none;
-            padding: 6px 12px;
-            border: 1px solid #ccc;
-            border-top: none;
-        }
-
-        .tab-3 {
-            overflow: hidden;
-            border: 1px solid #ccc;
-            background-color: #f1f1f1;
-        }
-
-        /* Style the buttons inside the tab */
-        .tab-3 button {
-            background-color: inherit;
-            float: left;
-            border: none;
-            outline: none;
-            cursor: pointer;
-            padding: 14px 16px;
-            transition: 0.3s;
-            font-size: 17px;
-        }
-
-        /* Change background color of buttons on hover */
-        .tab-3 button:hover {
-            background-color: #ddd;
-        }
-
-        /* Create an active/current tablink class */
-        .tab-3 button.active {
-            background-color: #ccc;
-        }
-
-        /* Style the tab content */
-        .tabcontent-3 {
-            display: none;
-            padding: 6px 12px;
-            border: 1px solid #ccc;
-            border-top: none;
-        }
-
-        h2 {
-            font-size: 20px;
-        }
-
-        ol li {
-            font-size: 20px;
-            color: black;
-        }
-
-        .implement {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            height: 500px;
-        }
-
-        iframe {
-
-            width: 100%;
-            height: 100%;
-        }
-
-        .downloadAll {
-            display: flex;
-            justify-content: center;
-        }
-
-        .downloadAll button {
-            height: 50px;
-            width: 200px;
-            color: white;
-            background: #1010ad;
-        }
-    </style>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!--        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
+    <!--        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
 </head>
 <body>
 
@@ -286,262 +66,294 @@
     </aside> <!-- END COLORLIB-ASIDE -->
     <div id="colorlib-main">
         <section class="ftco-section-2">
+            <div class="container">
+                <ul class="nav nav-tabs">
+                    <li class="active"><a data-toggle="tab" href="#home">Lab 1</a></li>
+                    <li><a data-toggle="tab" href="#menu1">Lab 2</a></li>
+                    <li><a data-toggle="tab" href="#menu2">Lab 3</a></li>
+                    <li><a data-toggle="tab" href="#menu3">Lab 4</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade in active">
+                        <section id="tabs">
+                            <div class="container">
+
+                                <div class="row">
+                                    <div class="col-xs-12 ">
+                                        <nav>
+                                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                                <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab"
+                                                   href="#nav-home" role="tab" aria-controls="nav-home"
+                                                   aria-selected="true">Requirement</a>
+                                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
+                                                   href="#nav-profile" role="tab" aria-controls="nav-profile"
+                                                   aria-selected="false">Design</a>
+                                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
+                                                   href="#nav-contact" role="tab" aria-controls="nav-contact"
+                                                   aria-selected="false">Implement</a>
+
+                                            </div>
+                                        </nav>
+                                        <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                                 aria-labelledby="nav-home-tab">
+                                                <ol style="font-size: 24px;">
+                                                    <li><h2>Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ
+                                                        như sinh viên, môn học, giảng viên,… để thiết kế trên phần
+                                                        mềm một chức năng trên web để thêm, sửa, xóa, tìm kiếm
+                                                        cho đối tượng đó.</h2></li>
+
+                                                    <li><h2>Upload tất cả lên Azure / github trong menu Lab1 theo thứ
+                                                        tự: </h2>
+                                                        <ul style="font-size: 20px">
+                                                            <li>-Tab Requirement: copy lại nội dung của phần 1 vào đây
+                                                                (trình bày
+                                                                cho đẹp)
+                                                            </li>
+                                                            <li>-Tab Design: để link tới các file sau đây:
+                                                                <ul>
+                                                                    <li>Thiết kế trên giấy (chụp lại ảnh)</li>
+                                                                    <li>Thiết kế trên phần mềm thiết kế</li>
+                                                                </ul>
+                                                            </li>
+                                                            <li>&nbsp;-Tab Implement: chuyển tất cả thiết kế ở trên ở
+                                                                trên sang html
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
 
 
-            <div class="tab">
-                <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Lab 1</button>
-                <button class="tablinks" onclick="openCity(event, 'Paris')">Lab 2</button>
-                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Lab 3</button>
-            </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                                 aria-labelledby="nav-profile-tab">
 
-            <div id="London" class="tabcontent">
-                <div class="tab-1 tab tab-sub">
-                    <button class="tablinks-1" onclick="openCity1(event, 'London-1')" id="defaultOpen-1">Requirement
-                    </button>
-                    <button class="tablinks-1" onclick="openCity1(event, 'Paris-1')">Desgin</button>
-                    <button class="tablinks-1" onclick="openCity1(event, 'Tokyo-1')">Implement</button>
-                </div>
 
-                <div id="London-1" class="tabcontent-1" style="color: black;font-size: 30px;">
-                    <ol>
-                        <li><h2>Chọn 1 đối tượng bất kỳ trong thế giới thực, ví dụ
-                            như sinh viên, môn học, giảng viên,… để thiết kế trên phần
-                            mềm một chức năng trên web để thêm, sửa, xóa, tìm kiếm
-                            cho đối tượng đó.</h2></li>
+                                                <li>
+                                                    <h2>Thiết kế trên giấy</h2>
+                                                    <div>
+                                                        <img src="IMG/add.jpg" alt=""
+                                                             style="width: 70%; height: 570px;">
+                                                        <a href="IMG/add.jpg" download>
+                                                            <button class="btn">
+                                                                <i class="fa fa-download"></i>
+                                                                Download
+                                                            </button>
+                                                        </a>
 
-                        <li><h2>Upload tất cả lên Azure / github trong menu Lab1 theo thứ
-                            tự: </h2>
-                            <ul>
-                                <li>-Tab Requirement: copy lại nội dung của phần 1 vào đây (trình bày
-                                    cho đẹp)
-                                </li>
-                                <li>-Tab Design: để link tới các file sau đây:
-                                    <ul>
-                                        <li>Thiết kế trên giấy (chụp lại ảnh)</li>
-                                        <li>Thiết kế trên phần mềm thiết kế</li>
-                                    </ul>
-                                </li>
-                                <li>&nbsp;-Tab Implement: chuyển tất cả thiết kế ở trên ở trên sang html</li>
-                            </ul>
-                        </li>
-                    </ol>
+                                                    </div>
+                                                    <div>
+                                                        <img src="IMG/editremove.jpg" alt=""
+                                                             style="width: 70%; padding: 100px;">
+                                                        <a href="IMG/editremove.jpg" download>
+                                                            <button class="btn">
+                                                                <i class="fa fa-download"></i>
+                                                                Download
+                                                            </button>
+                                                        </a>
 
-                </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <h2>Thiết kế trên Figma</h2>
+                                                    <div>
+                                                        <img src="IMG/add%20employee.png" alt="" style="width: 70%;">
+                                                        <a href="IMG/add%20employee.png" download>
+                                                            <button class="btn">
+                                                                <i class="fa fa-download"></i>
+                                                                Download
+                                                            </button>
+                                                        </a>
 
-                <div id="Paris-1" class="tabcontent-1">
-                    <div style="width: 100%; height: 100%">
-                        <ol>
-                            <li>
-                                <div style="margin: 20px">Thiết kế trên giấy</div>
-                                <div style="display: flex; margin-bottom: 100px">
-                                    <div style="width: 70%">
-                                        <img src="IMG/add.jpg" alt="" style="width: inherit">
-                                    </div>
-                                    <div style="display: flex; align-items: center">
-                                        <a href="IMG/add.jpg" download>
-                                            <button class="btn">
-                                                <i class="fa fa-download"></i>
-                                                Download
-                                            </button>
-                                        </a>
+                                                    </div>
+                                                    <div>
+                                                        <img src="IMG/Figma.png" alt="" style="width: 70%;">
+                                                        <a href="IMG/Figma.png" download>
+                                                            <button class="btn">
+                                                                <i class="fa fa-download"></i>
+                                                                Download
+                                                            </button>
+                                                        </a>
+
+                                                    </div>
+
+
+                                                </li>
+
+
+                                                <div class="downloadAll">
+                                                    <a href="IMG/AllImage.zip" download class="downloadAll-1">
+                                                        <button class="btn" style="font-size: 20px">
+                                                            <i class="fa fa-download"></i>
+                                                            Download All
+                                                        </button>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                                 aria-labelledby="nav-contact-tab">
+                                                <div class="implement">
+                                                    <iframe src="Figtable.html" width="100%" height="500px">
+                                                    </iframe>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
                                     </div>
                                 </div>
-                                <div style="display: flex">
-                                    <div style="width: 70%">
-                                        <img src="IMG/editremove.jpg" alt="" style="width: inherit">
+                            </div>
+                        </section>
+                    </div>
+                    <div id="menu1" class="tab-pane fade">
+                        <section id="tabss">
+                            <div class="container">
+
+                                <div class="row">
+                                    <div class="col-xs-12 ">
+                                        <nav>
+                                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                                <a class="nav-item nav-link active" id="nav-home-tab1" data-toggle="tab"
+                                                   href="#nav-home1" role="tab" aria-controls="nav-home"
+                                                   aria-selected="true">Home</a>
+                                                <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab"
+                                                   href="#nav-profile1" role="tab" aria-controls="nav-profile1"
+                                                   aria-selected="false">Profile</a>
+                                                <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab"
+                                                   href="#nav-contact1" role="tab" aria-controls="nav-contact"
+                                                   aria-selected="false">Contact</a>
+                                                <a class="nav-item nav-link" id="nav-about-tab" data-toggle="tab"
+                                                   href="#nav-about" role="tab" aria-controls="nav-about"
+                                                   aria-selected="false">About</a>
+                                            </div>
+                                        </nav>
+                                        <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContents">
+                                            <div class="tab-pane fade show active" id="nav-home1" role="tabpanel"
+                                                 aria-labelledby="nav-home-tab1">
+                                                <ol>
+                                                    <li><h2>Bài tập cá nhân:</h2>
+                                                        <ul style="font-size: 20px">
+                                                            <li>
+                                                                Tạo ra một user scenario
+                                                            </li>
+                                                            <li>
+                                                                Chọn 1 bước trong user scenario để thiết kế 1 form giao
+                                                                diện
+                                                                Web trên công cụ thiết kế đã chọn. Sau đó tạo ra file
+                                                                html tương
+                                                                ứng cho thiết kế này.
+                                                            </li>
+                                                            <li>
+                                                                Upload lên Azure / github: trong file html có chèn hình
+                                                                ảnh của
+                                                                user scenario ở (1) và đường dẫn của file thiết kế ở
+                                                                (2).
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <h2>Bài tập nhóm:</h2>
+                                                        <ul style="font-size: 20px">
+                                                            <li>
+                                                                Tiếp tục cập nhật Group Diary cho tuần này, phân công
+                                                                công việc
+                                                                cho từng thành viên.
+                                                            </li>
+                                                            <li>
+                                                                Tạo trang About có ghi thông tin về các thành viên (mã
+                                                                SV, Họ
+                                                                tên, Lớp, Sở thích,…) è cần trình bày sao cho đẹp
+                                                            </li>
+                                                            <li>
+                                                                Upload lên Azure
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ol>
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-profile1" role="tabpanel"
+                                                 aria-labelledby="nav-profile-tab">
+                                                <div style="margin: auto; width: 50%;height: 500px;">
+                                                    <img src="IMG/usercenario.png" alt="" style="height: 500px;">
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-contact1" role="tabpanel"
+                                                 aria-labelledby="nav-contact-tab">
+                                                <div style="width: 100%; height: 100%">
+                                                    <ol>
+                                                        <li>
+                                                            <div style="margin: 20px;"><h2>Thiết kế trên giấy</h2></div>
+                                                            <div style="display: flex; margin-bottom: 100px">
+                                                                <div style="width: 70%">
+                                                                    <img src="IMG/loginpaper.jpg" alt="" style="width: 100%;">
+                                                                </div>
+                                                                <div style="display: flex; align-items: center">
+                                                                    <a href="IMG/loginpaper.jpg" download>
+                                                                        <button class="btn">
+                                                                            <i class="fa fa-download"></i>
+                                                                            Download
+                                                                        </button>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+
+                                                        </li>
+                                                        <li>
+                                                            <div style="margin: 20px"><h2>Thiết kế trên Figma</h2></div>
+                                                            <div>
+                                                                <img src="IMG/Login.png" alt="" style="width: 70%;">
+                                                                <a href="IMG/Login.png" download>
+                                                                    <button class="btn">
+                                                                        <i class="fa fa-download"></i>
+                                                                        Download
+                                                                    </button>
+                                                                </a>
+
+                                                            </div>
+                                                        </li>
+
+
+                                                    </ol>
+                                                    <div class="downloadAll" style="margin: 30px;">
+                                                        <a href="IMG/AllImage1" download  class="downloadAll-1">
+                                                            <button class="btn" style="font-size: 20px">
+                                                                <i class="fa fa-download"></i>
+                                                                Download All
+                                                            </button>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="nav-about" role="tabpanel"
+                                                 aria-labelledby="nav-about-tab">
+                                                <div id="Tokyo-2" class="tabcontent-2">
+                                                    <iframe src="login.html" frameborder="0" style="width: 100%; height: 700px"></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    <div style="display: flex; align-items: center">
-                                        <a href="IMG/editremove.jpg" download>
-                                            <button class="btn">
-                                                <i class="fa fa-download"></i>
-                                                Download
-                                            </button>
-                                        </a>
-                                    </div>
                                 </div>
-
-                            </li>
-                            <li>
-                                <div style="margin: 20px">Thiết kế trên Figma</div>
-                                <div>
-                                    <img src="IMG/add%20employee.png" alt="" style="width: 70%;">
-                                    <a href="IMG/add%20employee.png" download>
-                                        <button class="btn">
-                                            <i class="fa fa-download"></i>
-                                            Download
-                                        </button>
-                                    </a>
-
-                                </div>
-                                <div>
-                                    <img src="IMG/Figma.png" alt="" style="width: 70%;">
-                                    <a href="IMG/Figma.png" download>
-                                        <button class="btn">
-                                            <i class="fa fa-download"></i>
-                                            Download
-                                        </button>
-                                    </a>
-
-                                </div>
-
-
-                            </li>
-
-
-                        </ol>
-                        <div class="downloadAll" style="margin: 30px;">
-                            <a href="IMG/AllImage.zip" download>
-                                <button class="btn">
-                                    <i class="fa fa-download"></i>
-                                    Download All
-                                </button>
-                            </a>
-                        </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                        <h3>Menu 2</h3>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam.</p>
+                    </div>
+                    <div id="menu3" class="tab-pane fade">
+                        <h3>Menu 3</h3>
+                        <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                            explicabo.</p>
                     </div>
                 </div>
-                <div id="Tokyo-1" class="tabcontent-1">
-                    <div class="implement">
-                        <iframe src="Figtable.html" width="100%">
-
-                        </iframe>
-                    </div>
-
-                </div>
-
             </div>
 
-            <div id="Paris" class="tabcontent">
-                <!--                sgfgd-->
-                <div class="tab-2 tab tab-sub">
-                    <button class="tablinks-2" onclick="openCity2(event, 'London-2')" id="defaultOpen-2">Requirement
-                    </button>
-                    <button class="tablinks-2" onclick="openCity2(event, 'Scenario')">UserScenario
-                    </button>
-                    <button class="tablinks-2" onclick="openCity2(event, 'Paris-2')">Desgin</button>
-                    <button class="tablinks-2" onclick="openCity2(event, 'Tokyo-2')">Implement</button>
-                </div>
 
-                <div id="London-2" class="tabcontent-2">
-                    <ol>
-                        <li> Bài tập cá nhân:
-                            <ul>
-                                <li>
-                                    Tạo ra một user scenario
-                                </li>
-                                <li>
-                                    Chọn 1 bước trong user scenario để thiết kế 1 form giao diện
-                                    Web trên công cụ thiết kế đã chọn. Sau đó tạo ra file html tương
-                                    ứng cho thiết kế này.
-                                </li>
-                                <li>
-                                    Upload lên Azure / github: trong file html có chèn hình ảnh của
-                                    user scenario ở (1) và đường dẫn của file thiết kế ở (2).
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            Bài tập nhóm:
-                            <ul>
-                                <li>
-                                    Tiếp tục cập nhật Group Diary cho tuần này, phân công công việc
-                                    cho từng thành viên.
-                                </li>
-                                <li>
-                                    Tạo trang About có ghi thông tin về các thành viên (mã SV, Họ
-                                    tên, Lớp, Sở thích,…) è cần trình bày sao cho đẹp
-                                </li>
-                                <li>
-                                    Upload lên Azure
-                                </li>
-                            </ul>
-                        </li>
-                    </ol>
-                </div>
-                <div id="Scenario" class="tabcontent-2">
-
-                    <div style="margin: auto;
-    width: 50%;
-    height: 500px;">
-                        <img src="IMG/usercenario.png" alt="" style="height: 500px;">
-                    </div>
-                </div>
-
-                <div id="Paris-2" class="tabcontent-2">
-                    <div style="width: 100%; height: 100%">
-                        <ol>
-                            <li>
-                                <div style="margin: 20px;">Thiết kế trên giấy</div>
-                                <div style="display: flex; margin-bottom: 100px">
-                                    <div style="width: 70%">
-                                        <img src="IMG/loginpaper.jpg" alt="" style="width: inherit">
-                                    </div>
-                                    <div style="display: flex; align-items: center">
-                                        <a href="IMG/loginpaper.jpg" download>
-                                            <button class="btn">
-                                                <i class="fa fa-download"></i>
-                                                Download
-                                            </button>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </li>
-                            <li>
-                                <div style="margin: 20px">Thiết kế trên Figma</div>
-                                <div>
-                                    <img src="IMG/Login.png" alt="" style="width: 70%;">
-                                    <a href="IMG/Login.png" download>
-                                        <button class="btn">
-                                            <i class="fa fa-download"></i>
-                                            Download
-                                        </button>
-                                    </a>
-
-                                </div>
-                            </li>
-
-
-                        </ol>
-                        <div class="downloadAll" style="margin: 30px;">
-                            <a href="IMG/AllImage1" download>
-                                <button class="btn">
-                                    <i class="fa fa-download"></i>
-                                    Download All
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <!--                daafaf-->
-                </div>
-                <div id="Tokyo-2" class="tabcontent-2">
-                    <iframe src="login.html" frameborder="0" style="width: 100%; height: 700px"></iframe>
-                </div>
-            </div>
-            <div id="Tokyo" class="tabcontent">
-                <div class="tab-3 tab tab-sub">
-                    <button class="tablinks-3" onclick="openCity3(event, 'London-3')" id="defaultOpen-3">Requirement
-                    </button>
-                    <button class="tablinks-3" onclick="openCity3(event, 'Paris-3')">Desgin</button>
-                    <button class="tablinks-3" onclick="openCity3(event, 'Tokyo-3')">Implement</button>
-                </div>
-
-                <div id="London-3" class="tabcontent-3">
-                    <h3>Requirement</h3>
-                    <p>London is the capital city of England.</p>
-                </div>
-
-                <div id="Paris-3" class="tabcontent-3">
-                    <h3>Design</h3>
-                    <p>Paris is the capital of France.</p>
-                </div>
-
-                <div id="Tokyo-3" class="tabcontent-3">
-                    <h3>Implement</h3>
-                    <p>Tokyo is the capital of Japan.</p>
-                </div>
-            </div>
         </section>
         <footer class="ftco-footer ftco-bg-dark ftco-section">
             <div class="container px-md-5">
@@ -629,76 +441,22 @@
 <script src="js/google-map.js"></script>
 <script src="js/main.js"></script>
 <script>
-    function openCity(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active";
-    }
-
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen").click();
-</script>
-<script>
-    function openCity1(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent-1");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks-1");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active-1", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active-1";
-    }
-
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen-1").click();
-</script>
-<script>
-    function openCity2(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent-2");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks-2");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active-2", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active-2";
-    }
-
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen-2").click();
-</script>
-<script>
-    function openCity3(evt, cityName) {
-        var i, tabcontent, tablinks;
-        tabcontent = document.getElementsByClassName("tabcontent-3");
-        for (i = 0; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablinks-3");
-        for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace(" active-3", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " active-3";
-    }
-
-    // Get the element with id="defaultOpen" and click on it
-    document.getElementById("defaultOpen-3").click();
+    // function openPage(pageName, elmnt, color) {
+    //     var i, tabcontent, tablinks;
+    //     tabcontent = document.getElementsByClassName("tabcontents");
+    //     for (i = 0; i < tabcontent.length; i++) {
+    //         tabcontent[i].style.display = "none";
+    //     }
+    //     tablinks = document.getElementsByClassName("tablinkss");
+    //     for (i = 0; i < tablinks.length; i++) {
+    //         tablinks[i].style.backgroundColor = "";
+    //     }
+    //     document.getElementById(pageName).style.display = "block";
+    //     elmnt.style.backgroundColor = color;
+    // }
+    //
+    // // Get the element with id="defaultOpen" and click on it
+    // document.getElementById("defaultOpens").click();
 </script>
 
 
